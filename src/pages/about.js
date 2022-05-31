@@ -1,37 +1,14 @@
 import React from "react";
-import { Link } from "gatsby";
+import Layout from "../components/layout";
 
-const Header = () => {
+const AboutPage = () => {
   return (
-    <header>
-      <h1>About Me</h1>
-    </header>
-  );
-};
-
-const Nav = () => {
-  return (
-    <nav>
-      <ul>
-        <li>
-          <Link to="/">Back to Home</Link>
-        </li>
-      </ul>
-    </nav>
-  );
-};
-
-function AboutPage() {
-  return (
-    <main>
-      <title>About Me</title>
-      <Header></Header>
-      <Nav></Nav>
+    <Layout pageTitle="About Me">
       <p>
         Hi there! I'm the proud creator of this site, which I built with Gatsby.
       </p>
-    </main>
+    </Layout>
   );
-}
+};
 
 export default AboutPage;
