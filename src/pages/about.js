@@ -1,10 +1,10 @@
-import * as React from "react";
+import React from "react";
 import { Link } from "gatsby";
 
 const Header = () => {
   return (
     <header>
-      <h1>Welcome to my Gatsby site!</h1>
+      <h1>About Me</h1>
     </header>
   );
 };
@@ -14,23 +14,24 @@ const Nav = () => {
     <nav>
       <ul>
         <li>
-          <Link to="/about">About</Link>
+          <Link to="/">Back to Home</Link>
         </li>
       </ul>
     </nav>
   );
 };
 
-// markup
-const IndexPage = () => {
+function AboutPage() {
   return (
     <main>
-      <title>Home Page</title>
+      <title>About Me</title>
       <Header></Header>
       <Nav></Nav>
-      <p>I'm making this by following the Gatsby Tutorial.</p>
+      <p>
+        Hi there! I'm the proud creator of this site, which I built with Gatsby.
+      </p>
     </main>
   );
-};
+}
 
-export default IndexPage;
+export default AboutPage;
